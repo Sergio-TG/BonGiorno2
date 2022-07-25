@@ -5,8 +5,22 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+}
+#form__contacto {
+    color: #36A0FF;
+    font-size: 2em;
+    padding: 10px;
+    background: transparent;
 }
 
+form-row{
+    background: transparent;
+}
+.bigicon {
+    font-size: 35px;
+    color: #36A0FF;
+}
 a {
     text-decoration: none;
 }
@@ -20,27 +34,19 @@ body {
     /* Chrome 10-25, Safari 5.1-6*/
     background: linear-gradient(to right, #FF0000, #FFF200, #1E9600);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
-.header {
-    color: #36A0FF;
-    font-size: 27px;
-    padding: 10px;
-}
 
-.bigicon {
-    font-size: 35px;
-    color: #36A0FF;
-}
 h1 {
-    font-size: 1em;
+    font-size: 2em;
     color: #352DDB;
     font-family: Cinzel;
 
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 3rem;
     color: #941089;
     text-align: center;
 }
@@ -48,7 +54,8 @@ h2 {
 p {
     font-family: 'Roboto', sans-serif;
     color: #939292;
-    font-size: 1em;
+    font-size: 0.4em;
+    line-height: 1.2em;
 
 }
 
@@ -59,18 +66,13 @@ p {
 
 .nav-item {
     font-family: 'Roboto', sans-serif;
-    font-size: 1.2em;
+    font-size: 1.9rem;
     text-decoration: none;
 }
 
-.dropdown-menu {
-    font-size: 0.4em;
-}
 
-.bg-ice {
-    background-color: transparent;
-}
-/*div header {
+
+div header {
     grid-area: header;
     display: flex;
     justify-content: flex-start;
@@ -79,9 +81,9 @@ p {
     height: max-content;
     border: solid 4px rgb(190, 80, 1);
     margin: 20px;
-}*/
+}
 
-div nav {
+header div nav {
     text-align: center;
     grid-area: nav;
     margin: 10px;
@@ -92,32 +94,27 @@ header div nav ul {
 
 }
 
-div ul li {
+header div nav ul li {
     list-style: none;
     display: inline-block;
     margin-right: 20px;
 }
 
- div ul li a {
+header div nav ul li a {
     font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
+    font-size: 1.9rem;
     text-decoration: none;
     color: #5B5959;
 }
 
-div ul li:hover {
+header div nav ul li:hover {
     color: #9B17AF;
     font-weight: 600;
 
 }
 
-div ul li:hover {
-    transform: scale(1.05);
-
-}
-
-btn-outline-success {
-    color: #F10202;
+header div nav ul li:hover {
+    transform: scale(1.2);
 
 }
 
@@ -134,39 +131,35 @@ main {
 }
 
 #cabecera__principal {
-    color: #372429;
+    color: #DA0C46;
     font-family: 'Cinzel', serif;
     font-weight: bold;
-    font-size: 2em;
+    font-size: 3rem;
     padding: 20px 20px;
-    align-items: center;
 }
 
 .cabecera__nosotros {
     color: #30F126;
     font-family: 'Cinzel', serif;
     font-weight: bold;
-    font-size: 2em;
+    font-size: 3rem;
     padding: 20px 20px;
     text-align: center;
     animation-name: textAlpha;
     animation-duration: 3s;
 }
 
-form-horizontal{
-    align-content: center;
-}
 .cabecera__contacto {
     color: #EF0E2E;
     font-family: 'Cinzel', serif;
     font-weight: bold;
-    font-size: 2em;
+    font-size: 3rem;
     padding: 20px 20px;
     text-align: center;
 }
 
 .text__contacto {
-    font-size: 1em;
+    font-size: 2em;
     font-weight: bold;
     text-align: center;
     animation-name: textAlpha;
@@ -174,13 +167,13 @@ form-horizontal{
 }
 
 .text__horario {
-    font-size: 1em;
+    font-size: 2.4rem;
     font-weight: bold;
     text-align: center;
 }
 
 .contact {
-    font-size: 1em;
+    font-size: 2.4rem;
     font-weight: bold;
     text-align: center;
     color: #F81036;
@@ -197,7 +190,7 @@ form-horizontal{
 }
 
 #nuestras_promos {
-    color: #1D180E;
+    color: #F1AD1A;
     font-family: 'Cinzel', serif;
     font-weight: bold;
     font-size: 3rem;
@@ -213,7 +206,6 @@ form-horizontal{
     padding: 15px;
     margin-top: 30px;
     margin-bottom: 30px;
-    background-color: black;
     border-radius: 20px;
     margin: 20px;
     box-sizing: border-box;
@@ -229,6 +221,7 @@ form-horizontal{
     padding: 15px;
     margin-top: 30px;
     margin-bottom: 30px;
+    background-color: black;
     border-radius: 20px;
     width: 70%;
     height: max-content;
@@ -317,7 +310,8 @@ form-horizontal{
 }
 
 p {
-    font-size: 1em;
+    font-size: 2.4rem;
+    line-height: 2.2rem;
     font-family: Outfit;
     color: #2F0505;
     text-align: justify;
@@ -325,12 +319,12 @@ p {
 }
 
 .main-text{
-    color: #F3F4F4;
-    font-size: 1em;
+    color: #43D4CF;
+    font-size: 2rem;
 }
 .subtHistoria {
     font-family: 'Roboto', sans-serif;
-    font-size: 1em;
+    font-size: 2rem;
     background-color: #C4D222;
     border-style: solid;
     color: blueviolet;
@@ -344,7 +338,7 @@ p {
     font-family: 'Roboto', sans-serif;
     background-color: #F10B0B;
     border-style: dotted;
-    font-size: 1em;
+    font-size: 2rem;
 }
 
 .text__mision {
@@ -356,7 +350,7 @@ p {
     background-color: #4D17FD;
     border-style: groove;
     color: lightcoral;
-    font-size: 1em;
+    font-size: 2rem;
 }
 
 .text__valores {
@@ -396,7 +390,7 @@ p {
 }
 
 #productos .galeria figure figcaption {
-    font-size: 1em;
+    font-size: 2.5rem;
     text-align: left;
     color: #BD5EF3;
     padding: 10px 0;
@@ -412,7 +406,7 @@ p {
 }
 
 /*Formulario de Contacto*/
-.form-horizontal {
+.formContacto {
     font-family: 'Roboto serif;', sans-serif;
     display: block;
     margin: 0 auto;
@@ -423,6 +417,11 @@ p {
     box-sizing: border-box;
     overflow-x: hidden;
 
+}
+div form{
+  box-sizing: border-box;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 .mapa {
@@ -549,12 +548,6 @@ div footer div a img {
     row-gap: 10px;
     padding: 20px;
 }
-
-
-@media (min-width: 280px) and (max-width: 320px){
-    #botonera{
-        width: 150px;
-    }
 
 /* Versión para Móvil*/
 @media (max-width:480px) {
