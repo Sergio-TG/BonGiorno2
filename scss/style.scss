@@ -55,50 +55,6 @@ p {
 
 }
 
-.logo {
-    width: 100%;
-
-}
-
-.nav-item {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1em;
-    text-decoration: none;
-}
-
-div ul li {
-    text-align: center;
-    margin: 10px;
-}
-
-div ul {
-    display: inline-block;
-
-}
-
-div ul li {
-    list-style: none;
-    display: inline-block;
-    margin-right: 20px;
-}
-
-div ul li a {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1em;
-    text-decoration: none;
-    color: #5B5959;
-}
-
-div ul li:hover {
-    color: #9B17AF;
-    font-weight: 600;
-
-}
-
-div ul li:hover {
-    transform: scale(1.2);
-
-}
 
 main {
     text-align: center;
@@ -248,11 +204,25 @@ main {
 .nosotros_main {
     border-style: outset;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: auto;
-    width: 70%;
+    width: auto;
     animation-name: textAlpha;
     animation-duration: 6s;
+}
+
+.mision {
+    border-style: outset;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: auto;
+    animation-name: textAlpha;
+    animation-duration: 6s;
+}
+
+.accordion-item {
+    background-color: #B0B0B0;
 }
 
 #subt_slogan {
@@ -312,8 +282,8 @@ p {
 
 }
 
-#row__productos{
-        display: flex;
+#row__productos {
+    display: flex;
     flex-direction: column;
     align-items: center;
 
@@ -430,7 +400,7 @@ div footer div a img {
     box-sizing: border-box;
 }
 
-#copy__by{
+#copy__by {
     justify-content: center;
     text-align: center;
     padding: 10px 0;
@@ -439,11 +409,30 @@ div footer div a img {
 
 /*Aplicando Animaciones*/
 @keyframes animateDiv {
-    0% {background-color: darkgrey;width: 250px;}
-    25%{background-color: deeppink;width: 350px;}
-    50%{background-color: darkorange;width: 550px;}
-    75%{background-color: yellow;width: 350px;}
-    100%{background-color: #4B4D4B;width: 250px;}
+    0% {
+        background-color: darkgrey;
+        width: 250px;
+    }
+
+    25% {
+        background-color: deeppink;
+        width: 350px;
+    }
+
+    50% {
+        background-color: darkorange;
+        width: 550px;
+    }
+
+    75% {
+        background-color: yellow;
+        width: 350px;
+    }
+
+    100% {
+        background-color: #4B4D4B;
+        width: 250px;
+    }
 }
 
 @keyframes textAlpha {
@@ -474,7 +463,9 @@ div footer div a img {
 /* Versión para Móvil*/
 @media (min-width:320px) and (max-width:480px) {
 
-        display: flex;{
+    display: flex;
+
+        {
         flex-direction: column;
         justify-content: center;
         align-items: center;

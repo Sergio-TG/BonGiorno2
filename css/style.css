@@ -248,11 +248,24 @@ main {
 .nosotros_main {
     border-style: outset;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: auto;
-    width: 70%;
+    width: auto;
     animation-name: textAlpha;
     animation-duration: 6s;
+}
+.mision {
+    border-style: outset;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: auto;
+    animation-name: textAlpha;
+    animation-duration: 6s;
+}
+
+.accordion-item{
+    background-color: #B0B0B0;
 }
 
 #subt_slogan {

@@ -14,6 +14,9 @@
             a {
                 color: $keyColor;
                 font-family: $secondaryfont;
+                &:hover{
+                    font-weight: 900;
+                }
             }
         }
     }
